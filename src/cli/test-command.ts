@@ -3,7 +3,7 @@ import testAction from "../usecases/test-usecase";
 
 const command = new Command("")
     .command("test")
-    .arguments("<url> <filename>")
+    // .arguments("<url> <filename>")
     .description("test command")
     .action(testAction);
 
