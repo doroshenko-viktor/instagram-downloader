@@ -1,11 +1,9 @@
 import { program } from "commander";
-import testAction from "../app/usecases/test-usecase";
+import testCommand from "./test-command";
 
 const configure = () => {
     program
-        .command('test <url> <filename>')
-        .description('test option')
-        .action(testAction);
+        .addCommand(testCommand);
 
     program.parse();
 };
