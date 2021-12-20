@@ -9,7 +9,9 @@
             "request": "launch",
             "name": "test",
             "args": [
-                "test"
+                "test",
+                "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpixy.org%2Fsrc%2F20%2F201310.jpg&f=1&nofb=1",
+                "image.jpg"
             ],
             "skipFiles": [],
             "program": "${workspaceFolder}/build/app.js",
