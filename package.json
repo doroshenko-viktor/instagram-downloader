@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "test-cli": "build/app.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/doroshenko-viktor/instagram-downloader.git"
