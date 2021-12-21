@@ -10,7 +10,7 @@ export type MediaData = {
     media_type: MediaType;
     media_url: string;
     timestamp: string;
-    caption: string;
+    caption?: string;
 };
 
 export type Cursors = {

@@ -15,7 +15,8 @@
     },
     "explorerExclude.backup": null,
     "cSpell.words": [
-        "codepaths"
+        "codepaths",
+        "Downloaders"
     ],
     "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
