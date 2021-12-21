@@ -1,18 +1,26 @@
 import chalk from "chalk";
+import winston, { LoggerOptions } from "winston";
 
-export const info = async (message: string) => {
-    const formattedMessage = chalk.gray(message);
-    console.info(formattedMessage);
+const configuration: LoggerOptions = {
+    "transports": [
+        new winston.transports.Console()
+    ]
 };
 
-export const warn = async (message: string) => {
-    const formattedMessage = chalk.bold.cyan(message);
-    console.warn(formattedMessage);
+export const log = winston.createLogger(configuration);
+
+const info = async (message: string) => {
+    return chalk.gray(message);
 };
 
-export const err = async (message: string) => {
-    const formattedMessage = chalk.bold.red(message);
-    console.warn(formattedMessage);
+const warn = async (message: string) => {
+    return chalk.bold.cyan(message);
 };
 
-export default { info, warn, err };
+const err = async (message: string) => {
+    return chalk.bold.red(message);
+};
+
+export const fmt = { info, warn, err };
+
+export default log;
